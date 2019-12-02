@@ -1,12 +1,3 @@
-<Query Kind="Program">
-  <Reference>&lt;RuntimeDirectory&gt;\System.XML.dll</Reference>
-  <Reference>&lt;RuntimeDirectory&gt;\System.Xml.Linq.dll</Reference>
-  <NuGetReference>morelinq</NuGetReference>
-  <Namespace>MoreLinq</Namespace>
-  <Namespace>System.Net</Namespace>
-  <Namespace>System.Xml</Namespace>
-  <Namespace>System.Xml.Linq</Namespace>
-</Query>
 
 void Main()
 {
@@ -14,7 +5,7 @@ void Main()
 	//string[] testInput = new string[] { "1969" };
 
 	double result = CalculateFuelRequirements(input);
-	result.Dump();
+	Console.WriteLine(result);
 }
 
 double CalculateFuelRequirements(string[] input)
