@@ -1,24 +1,14 @@
-<Query Kind="Program">
-  <Reference>&lt;RuntimeDirectory&gt;\System.XML.dll</Reference>
-  <Reference>&lt;RuntimeDirectory&gt;\System.Xml.Linq.dll</Reference>
-  <NuGetReference>morelinq</NuGetReference>
-  <Namespace>MoreLinq</Namespace>
-  <Namespace>System.Net</Namespace>
-  <Namespace>System.Xml</Namespace>
-  <Namespace>System.Xml.Linq</Namespace>
-</Query>
 
 void Main()
 {
 	string[] input = File.ReadAllText(@"c:\Users\Kaylyn\Desktop\AOC\Day2_A.txt").Trim().Split(new[] { "\r\n", "\r", "\n", "," }, StringSplitOptions.None);
 	//string[] test ="1,9,10,3,2,3,11,0,99,30,40,50".Split(',');
-	//s	input.Dump();
+
 	input[1] = "12";
 	input[2] = "2";
 	string[] result = RecreateIntcodeComputer(input);
-	//result.Dump();
 	
-	result[0].Dump();
+	Console.WriteLine(result[0]);
 }
 
 public string[] RecreateIntcodeComputer(string[] input)
