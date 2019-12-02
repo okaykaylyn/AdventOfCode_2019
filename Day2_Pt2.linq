@@ -12,7 +12,6 @@ void Main()
 		{
 			Array.Copy(cached, input, input.Length);
 
-			Random r = new Random();
 			input[1] = v.ToString();
 			input[2] = n.ToString();
 
