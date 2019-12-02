@@ -1,12 +1,3 @@
-<Query Kind="Program">
-  <Reference>&lt;RuntimeDirectory&gt;\System.XML.dll</Reference>
-  <Reference>&lt;RuntimeDirectory&gt;\System.Xml.Linq.dll</Reference>
-  <NuGetReference>morelinq</NuGetReference>
-  <Namespace>MoreLinq</Namespace>
-  <Namespace>System.Net</Namespace>
-  <Namespace>System.Xml</Namespace>
-  <Namespace>System.Xml.Linq</Namespace>
-</Query>
 
 void Main()
 {
@@ -31,28 +22,23 @@ void Main()
 
 			if (resultCase == "19690720")
 			{
-				(100 * int.Parse(input[1]) + int.Parse(input[2])).Dump();
+				Console.WriteLine(100 * int.Parse(input[1]) + int.Parse(input[2]))
 				break;
 			}
 		}
 	}
-//
-//	result[0].Dump();
-//	noun.Dump();
-//	verb.Dump();
 }
 
 public string[] RecreateIntcodeComputer(string[] input)
 {
 	int i = 0;
+	
 	do
 	{
 		int value = int.Parse(input[i]);
 
 		if (value == 99)
-		{
 			break;
-		}
 
 		else if (value == 1)
 		{
