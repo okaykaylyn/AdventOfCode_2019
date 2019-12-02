@@ -32,7 +32,6 @@ double CalculateFuelForFuel(double num)
 	if (num <= 0)
 		return 0;
 		
-	double cachedResult = num;
 	double fuelForFuel = 0;
 
 	double temp = DivideByThree(num);
