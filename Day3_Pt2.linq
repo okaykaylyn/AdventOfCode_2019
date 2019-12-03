@@ -1,16 +1,3 @@
-<Query Kind="Program">
-  <Reference>&lt;RuntimeDirectory&gt;\System.XML.dll</Reference>
-  <Reference>&lt;RuntimeDirectory&gt;\System.Xml.Linq.dll</Reference>
-  <NuGetReference>morelinq</NuGetReference>
-  <Namespace>MoreLinq</Namespace>
-  <Namespace>System</Namespace>
-  <Namespace>System.Collections.Generic</Namespace>
-  <Namespace>System.IO</Namespace>
-  <Namespace>System.Linq</Namespace>
-  <Namespace>System.Net</Namespace>
-  <Namespace>System.Xml</Namespace>
-  <Namespace>System.Xml.Linq</Namespace>
-</Query>
 
 void Main()
 {
