@@ -1,15 +1,3 @@
-<Query Kind="Program">
-  <Reference>&lt;RuntimeDirectory&gt;\System.Collections.dll</Reference>
-  <Reference>&lt;RuntimeDirectory&gt;\System.XML.dll</Reference>
-  <Reference>&lt;RuntimeDirectory&gt;\System.Xml.Linq.dll</Reference>
-  <NuGetReference>morelinq</NuGetReference>
-  <Namespace>MoreLinq</Namespace>
-  <Namespace>System.Collections.Generic</Namespace>
-  <Namespace>System.Net</Namespace>
-  <Namespace>System.Xml</Namespace>
-  <Namespace>System.Xml.Linq</Namespace>
-  <Namespace>static UserQuery</Namespace>
-</Query>
 
 void Main()
 {
@@ -35,7 +23,7 @@ void Main()
 
 	Console.WriteLine(manhattanDistances.Where(x => x != 0).OrderByDescending(m => m).Min(c => c));
 }
-// Define other methods and classes here
+
 public class Coordinates : HashSet<(int X, int Y)>
 { }
 
